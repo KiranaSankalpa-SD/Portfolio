@@ -32,7 +32,7 @@
                 <p>Building clean, scalable applications with modern architectures.</p>
                 <div class="social-icons">
                     <a href="https://github.com/KiranaSankalpa-SD" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/kirana-sankalpa-7b8b8b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/kirana-sankalpa-kulasekara-7925a5378/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="#"target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
                 <a href="#projects" class="btn">View My Work</a>
@@ -84,32 +84,43 @@
             </div>
             <div class="project-card">
                 <div class="project-info">
-                    <h3>Creative Media Assets</h3>
-                    <p>A collection of clean, modern UI components and video editing motion assets tailored for digital content creators.</p>
+                    <h3>Neon Blitz</h3>
+                    <p>This is a browser-based arcade game inspired by classic neon aesthetics and fast-paced gameplay.</p>
                     <div class="project-tags">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <span>Design</span>
+                        <span>JavaScript</span>
                     </div>
-                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/KiranaSankalpa-SD/Neon-Blitz" class="project-link"><i class="fab fa-github"></i> Source Code</a>
                 </div>
             </div>
+            <h4><a href="https://github.com/KiranaSankalpa-SD?tab=repositories" target="_blank" class="btn">See More </a></h4>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <h2 class="section-title">Get In <span>Touch</span></h2>
         <div class="contact-container">
-            <form action="#" method="POST" class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="portfolio-form">
+                
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                
+                <input type="hidden" name="subject" value="New Portfolio Message!">
+                
+                <input type="checkbox" name="botcheck" class="hidden-honeypot" style="display: none;">
+
                 <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 </div>
+                
+                <div id="form-result" class="form-status"></div>
+
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </div>

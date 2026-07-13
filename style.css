@@ -381,3 +381,13 @@ footer {
         font-size: 2.8rem;
     }
 }
+.form-status {
+    display: none;
+    font-size: 0.95rem;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    text-align: center;
+    font-weight: 500;
+}

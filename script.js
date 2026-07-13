@@ -54,3 +54,49 @@ window.addEventListener('scroll', () => {
 function varHeight() {
     return window.innerWidth <= 768 ? 80 : 150;
 }
+// --- Contact Form Handling via AJAX ---
+const form = document.getElementById('portfolio-form');
+const result = document.getElementById('form-result');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+    
+    result.style.display = "block";
+    result.style.color = "var(--text-muted)";
+    result.innerHTML = "Sending your message...";
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let res = await response.json();
+            if (response.status == 200) {
+                result.style.color = "#4ade80"; // Success Green
+                result.innerHTML = "Message sent successfully!";
+                form.reset();
+            } else {
+                console.log(response);
+                result.style.color = "#f87171"; // Error Red
+                result.innerHTML = res.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.style.color = "#f87171";
+            result.innerHTML = "Something went wrong. Please try again later.";
+        })
+        .then(function() {
+            // Hide the status message after 5 seconds
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 5000);
+        });
+});
