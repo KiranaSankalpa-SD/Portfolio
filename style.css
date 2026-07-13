@@ -391,3 +391,45 @@ footer {
     text-align: center;
     font-weight: 500;
 }
+/* --- Contact Social Links Styling --- */
+.contact-socials {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #334155;
+    padding-top: 25px;
+}
+
+.contact-socials p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-icons a {
+    color: var(--text-muted);
+    font-size: 1.8rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Specific hover accents for each platform */
+.contact-icons a[title="Facebook"]:hover {
+    color: #1877f2; /* Facebook Blue */
+    transform: translateY(-3px);
+}
+
+.contact-icons a[title="Discord"]:hover {
+    color: #5865f2; /* Discord Blurple */
+    transform: translateY(-3px);
+}
+
+.contact-icons a[title="Steam"]:hover {
+    color: #1b2838; /* Steam Dark Metallic / Light Blue alternative below if you want it brighter */
+    color: #66c0f4; /* Steam Cyan */
+    transform: translateY(-3px);
+}
