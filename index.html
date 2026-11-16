@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    < <header>
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <header>
         <nav class="navbar">
             <a href="#" class="logo"><span>Welcome</span></a>
             <ul class="nav-links" id="nav-links">
@@ -23,154 +26,155 @@
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
-        </header>
+    </header>
 
-        <section id="home" class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h3>Hello, I'm Kirana Sankalpa</h3>
-                    <h1>A Full-Stack Developer</h1>
-                    <p>Building clean, scalable applications with modern architectures.</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/KiranaSankalpa-SD" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/kirana-sankalpa-kulasekara-7925a5378/" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://www.blogger.com/blog/posts/4954841621174753547?hl=en&tab=jj" target="_blank"><i
-                                class="fab fa-blogger"></i></a>
-                    </div>
-                    <a href="#projects" class="btn">My Projects</a>
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h3 class="hero-anim">Hello, I'm Kirana Sankalpa</h3>
+                <h1 class="hero-anim">A <span id="typing">Full-Stack Developer</span><span class="cursor"></span></h1>
+                <p class="hero-anim">Building clean, scalable applications with modern architectures.</p>
+                <div class="social-icons hero-anim">
+                    <a href="https://github.com/KiranaSankalpa-SD" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kirana-sankalpa-kulasekara-7925a5378/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.blogger.com/blog/posts/4954841621174753547?hl=en&tab=jj" target="_blank"><i
+                            class="fab fa-blogger"></i></a>
                 </div>
+                <a href="#projects" class="btn hero-anim">My Projects</a>
+            </div>
 
-                <div class="hero-image">
+            <div class="hero-image">
+                <div class="profile-wrap">
                     <div class="profile-img-box">
                         <img src="portDP.png" alt="Profile Photo">
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="about">
-            <h2 class="section-title">About <span>Me</span></h2>
-            <div class="about-container">
-                <div class="about-text">
-                    <p>Recent NVQ Level 4 software development graduate with practical expertise across web and mobile
-                        platforms. Skilled in core Java, Android Java, PHP (MVC), JavaScript, and modern responsive UI
-                        design using Bootstrap 5. Proven ability to collaborate effectively via GitHub and design
-                        efficient
-                        relational database schemas.</p>
-                    <div class="skills">
-                        <span class="skill-badge">HTML5</span>
-                        <span class="skill-badge">CSS</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">PHP</span>
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">Java</span>
-                        <span class="skill-badge">Android Java</span>
-                        <span class="skill-badge">Bootstrap</span>
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">Wordpress</span>
-                        <span class="skill-badge">Laravel</span>
-                         <h5><a href="https://github.com/KiranaSankalpa-SD/KiranaSankalpa-SD" target="_blank" class="btn">See More
-                    </a></h5>
+    <section id="about" class="about">
+        <h2 class="section-title reveal">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-text reveal">
+                <p>Recent NVQ Level 4 software development graduate with practical expertise across web and mobile
+                    platforms. Skilled in core Java, Android Java, PHP (MVC), JavaScript, and modern responsive UI
+                    design using Bootstrap 5. Proven ability to collaborate effectively via GitHub and design
+                    efficient relational database schemas.</p>
+                <div class="skills">
+                    <span class="skill-badge">HTML5</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">PHP</span>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">Android Java</span>
+                    <span class="skill-badge">Bootstrap</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Wordpress</span>
+                    <span class="skill-badge">Laravel</span>
+                </div>
+                <a href="https://github.com/KiranaSankalpa-SD/KiranaSankalpa-SD" target="_blank"
+                    class="btn see-more">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title reveal">My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-info">
+                    <h3>Library Management System</h3>
+                    <p>A full-stack web application built using the MVC architecture, allowing seamless tracking and
+                        management of books and users.</p>
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
                     </div>
+                    <a href="https://github.com/KiranaSankalpa-SD/Mini-Library" class="project-link"><i
+                            class="fab fa-github"></i> Source Code</a>
                 </div>
             </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <h2 class="section-title">My <span>Projects</span></h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Library Management System</h3>
-                        <p>A full-stack web application built using the MVC architecture, allowing seamless tracking and
-                            management of books and users.</p>
-                        <div class="project-tags">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>Bootstrap</span>
-                        </div>
-                        <a href="https://github.com/KiranaSankalpa-SD/Mini-Library" class="project-link"><i
-                                class="fab fa-github"></i> Source Code</a>
+            <div class="project-card reveal">
+                <div class="project-info">
+                    <h3>Neon Blitz</h3>
+                    <p>This is a browser-based arcade game inspired by classic neon aesthetics and fast-paced
+                        gameplay. Created for experimentation and fun.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Neon Blitz</h3>
-                        <p>This is a browser-based arcade game inspired by classic neon aesthetics and fast-paced
-                            gameplay.Created for experimentation and fun.</p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <a href="https://github.com/KiranaSankalpa-SD/Neon-Blitz" class="project-link"><i
-                                class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Branch Management System - NGJA</h3>
-                        <p>A web-based desktop application for managing branch operations and inventory for NGJA.(In Progress)</p>
-                        <div class="project-tags">
-                            <span>PHP/Laravel</span>
-                            <span>MySQL</span>
-                            <span>Bootstrap</span>
-                        </div>
-                        <a href="https://github.com/KiranaSankalpa-SD/Branch-Management-System-NGJA" class="project-link"><i
-                                class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-                <h4><a href="https://github.com/KiranaSankalpa-SD?tab=repositories" target="_blank" class="btn">See More
-                    </a></h4>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2 class="section-title">Get In <span>Touch</span></h2>
-            <div class="contact-container">
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="portfolio-form">
-
-                    <input type="hidden" name="access_key" value="a90f2936-0f8e-4f75-842f-98fbce2b4fb4">
-
-                    <input type="hidden" name="subject" value="New Portfolio Message!">
-
-                    <input type="checkbox" name="botcheck" class="hidden-honeypot" style="display: none;">
-
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-
-                    <div id="form-result" class="form-status"></div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-                <div class="contact-socials">
-                    <p>Or reach out via my socials</p>
-                    <div class="contact-icons">
-                        <a href="https://www.facebook.com/kirana.sankalpa.kulasekara" target="_blank"
-                            title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="https://discord.com/channels/@ceylonthunder69" target="_blank" title="Discord"><i
-                                class="fab fa-discord"></i></a>
-                        <a href="https://steamcommunity.com/id/Ceylonthunder69/" target="_blank" title="Steam"><i
-                                class="fab fa-steam"></i></a>
-                    </div>
+                    <a href="https://github.com/KiranaSankalpa-SD/Neon-Blitz" class="project-link"><i
+                            class="fab fa-github"></i> Source Code</a>
                 </div>
             </div>
-        </section>
+            <div class="project-card reveal">
+                <div class="project-info">
+                    <h3>Branch Management System - NGJA</h3>
+                    <p>A web-based desktop application for managing branch operations and inventory for NGJA. (In
+                        Progress)</p>
+                    <div class="project-tags">
+                        <span>PHP/Laravel</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <a href="https://github.com/KiranaSankalpa-SD/Branch-Management-System-NGJA"
+                        class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="more-wrap reveal">
+            <a href="https://github.com/KiranaSankalpa-SD?tab=repositories" target="_blank" class="btn">See More</a>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
-        </footer>
+    <section id="contact" class="contact">
+        <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+        <div class="contact-container reveal">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="portfolio-form">
 
-        <script src="script.js"></script>
+                <input type="hidden" name="access_key" value="a90f2936-0f8e-4f75-842f-98fbce2b4fb4">
+                <input type="hidden" name="subject" value="New Portfolio Message!">
+                <input type="checkbox" name="botcheck" class="hidden-honeypot" style="display: none;">
+
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+
+                <div id="form-result" class="form-status"></div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-socials">
+                <p>Or reach out via my socials</p>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/kirana.sankalpa.kulasekara" target="_blank"
+                        title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://discord.com/channels/@ceylonthunder69" target="_blank" title="Discord"><i
+                            class="fab fa-discord"></i></a>
+                    <a href="https://steamcommunity.com/id/Ceylonthunder69/" target="_blank" title="Steam"><i
+                            class="fab fa-steam"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
